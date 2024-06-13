@@ -1,0 +1,74 @@
+.firma{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    height: 98vh
+}
+
+.content-firma{
+    display: flex;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.img-enlaces img{
+    margin-top: 10px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid #56287c;
+    width: 250px;
+    
+}
+
+.content-datos label {
+    display: block;
+}
+
+.linea {
+    border-bottom: 2px solid #56287c;
+    padding-bottom: 10px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cargo{
+    font-size: 20px;
+    color:#6f6d6d
+}
+
+.datos-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px 10px 10px;
+    color:#afa9a9
+}
