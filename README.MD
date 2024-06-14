@@ -1,5 +1,5 @@
-# Desarrolllo de Firma para correos.
+## Desarrolllo de Firma para correos.
 
-## Firma para correos con enlaces directos en los iconos correspondientes, con los datos de forma editable para la actualizacón.
+### Firma para correos con enlaces directos en los iconos correspondientes, con los datos de forma editable para la actualización.
 
 ![Texto alternativo](./img/firmacorreo.png)
