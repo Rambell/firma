@@ -7,7 +7,30 @@
     <title>firma</title>
 </head>
 <body>
-    <section class="firma">
+
+    <script>
+        function copyEmail(event) {
+            // Prevenir que el enlace realice cualquier acción por defecto
+            event.preventDefault();
+
+            // Crear un elemento de texto temporal
+            var tempInput = document.createElement("input");
+            tempInput.value = "matias.ramirez28@gmail.com";
+            document.body.appendChild(tempInput);
+
+            // Seleccionar el texto y copiarlo al portapapeles
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // Para dispositivos móviles
+            document.execCommand("copy");
+
+            // Eliminar el elemento temporal
+            document.body.removeChild(tempInput);
+
+            // Alerta opcional para indicar que se ha copiado el correo
+            alert("Correo copiado: " + tempInput.value);
+        }
+    </script>
+    <!-- <table class="firma">
         <div class="cont">
             <section class="content-firma">
                 <div class="imagenes">
@@ -34,7 +57,31 @@
                 </div>
             </section>
         </div>
-    </section>
+    </table> -->
+
+    <table>
+        <tr>
+          <td class="imagenes">
+            <img class="logo"src="https://49a16e38beb399c5df75d9df359d9696.r2.cloudflarestorage.com/imageimporta/logowhite6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a2764cf382ff1d6daf0e2ec3ef441af%2F20240618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240618T044114Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1231c022fb7ae9cfb1a2f91b782f07ce15d4634b32e629e9829e07a002b6c0cf" alt="">
+            
+          </td>
+          <td style="border-left: 2px solid #6309b8; padding-left: 10px;">
+            <p style="margin: 0; font-weight: bold; font-size: 16px;">Matías Ramírez Belmar</p>
+            <p style="margin: 0; color: gray; font-size: 14px;">Desarrollador Web</p>
+            <p style="margin: 0; color: gray; font-size: 12px;">Ingeniero en Informática</p>
+            <div class="img-enlaces">
+                <a href="https://www.linkedin.com/in/matiasramirezlink/"  target="_blank"><img src="https://49a16e38beb399c5df75d9df359d9696.r2.cloudflarestorage.com/imageimporta/Link.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a2764cf382ff1d6daf0e2ec3ef441af%2F20240618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240618T050445Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b537635dc69dc98a61477be155a2cadf3d0e6f48f9a637d275ebaf37841ab510" alt=""></a>
+                <!-- <span sty>......</span> -->
+                <a href="https://github.com/Rambell" target="_blank"><img src="https://49a16e38beb399c5df75d9df359d9696.r2.cloudflarestorage.com/imageimporta/github2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a2764cf382ff1d6daf0e2ec3ef441af%2F20240618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240618T051413Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=abb5c13eea05cb19b4cbb4d8e81bff94b767ede94dd9cd5944b74bcbcfc95978" alt=""></a>
+                <!-- <a href="#" onclick="copyEmail(event)"><img src="https://49a16e38beb399c5df75d9df359d9696.r2.cloudflarestorage.com/imageimporta/gmail.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a2764cf382ff1d6daf0e2ec3ef441af%2F20240618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240618T052710Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b8d7e5ae5e9202f3619ef20ebc3cd6182ccace493570af34eb43b787ab4f2ba" alt="Correo" style="width: 20px;"></a> -->
+            </div>
+          </td>
+        </tr>
+    </table>
+
+
+
+    
     
 </body>
 </html>
